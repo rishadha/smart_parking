@@ -1,0 +1,49 @@
+/* Center the bill container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the bill container */
+.bill-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.bill-item {
+    margin-bottom: 10px;
+}
+
+.bill-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.bill-container {
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.bill-item {
+    margin-bottom: 20px; /* Adjust the bottom margin between each bill-item */
+}
+
+.bill-label {
+    display: inline-block;
+    width: 150px; /* Adjust the width of the label if needed */
+    margin-right: 10px; /* Adjust the right margin between label and value */
+}
+
+.bill-value {
+    display: inline-block;
+}
+
+.pay-button,
+.cancel-button {
+    margin-top: 20px; /* Adjust the top margin for the buttons */
+}

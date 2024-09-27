@@ -1,0 +1,207 @@
+/* parking.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background-image: url('bg3.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin-top: 50px;
+}
+
+.parking-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Adjust as needed */
+}
+
+.road-line {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    margin: 10px 0;
+}
+.road-dash-line {
+    width: 100%;
+    height: 4px;
+    border-bottom: 3px dashed #333;
+    margin: 10px 0;
+}
+
+.parking-row {
+    display: flex;
+    align-items: center;
+}
+
+.parking-slot {
+    width: 70px;
+    height: 150px;
+    background-color: #062db9;
+    border: 2px solid #2980b9;
+    margin: 0 10px;
+}
+.parking-row .parking-slot.booked{
+    width: 70px;
+    height: 150px;
+    background-color: #cec3c3; /* Change to the desired color for booked slots */
+    border: 2px solid #838587; /* Change to the desired border color */
+    margin: 0 10px;
+}
+
+.slot-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff; /* Text color */
+    font-weight: bold;
+    cursor: pointer; /* Add this line to change cursor to hand */
+
+}
+.form-container form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+.form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 800px; /* Adjust width as needed */
+    height: 600px; /* Adjust height as needed */
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto; /* Enable vertical scrollbar if needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    
+}
+.form-container h2 {
+    text-align: center; /* Optional: Center text within the container */
+}
+
+.form-container small {
+    color: red;
+}
+/* Apply styles to your form button */
+
+
+.form-container button {
+    background-color: #062db9;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Optional: Add a smooth transition effect */
+
+    
+}
+
+/* Optional: Add hover and focus styles for better user experience */
+.form-container button:hover,
+.form-container button:focus {
+    background-color: #2980b9;
+    outline: none; /* Remove the default focus outline */
+}
+.form-container button[type="close"] {
+    background-color: #5e5b5b56; /* Light background color */
+    color: #333; /* Text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+/* Optional: Add hover and focus styles for better user experience */
+.form-container button[type="close"]:hover,
+.form-container button[type="close"]:focus {
+    background-color: #d0d3d4; /* Light background color on hover/focus */
+    outline: none; /* Remove the default focus outline */
+}
+
+#slotNumber {
+    cursor: not-allowed;
+    background-color: #f0f0f0; /* Optional: A different background color for non-editable fields */
+    border: 1px solid #ccc;   /* Optional: A different border for non-editable fields */
+}
+
+
+/* CSS for buttons */
+.button-row {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between buttons */
+    margin-bottom: 20px; /* Optional: Add margin below the button row */
+}
+
+form .btn-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form .btn-submit:hover {
+    background-color: #2980b9;
+}
+
+
+
+form .btn-close{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a0a4a88c;
+    color:#595e63;
+    border: 0px solid ;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form .btn-close:hover {
+    background-color: #2980b9;
+    
+}

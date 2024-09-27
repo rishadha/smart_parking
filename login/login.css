@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    z-index: -1;
+    /* Add the following line for the background image */
+    background-image: url('car.jpg');
+    background-size: cover; /* Adjust according to your needs */
+}
+
+.item {
+    text-align: center;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust the top value as needed */
+    left: 50px; /* Adjust the left value as needed */
+    font-family: 'Pacifico', 'cursive'; /* Use a cursive font or replace 'cursive' with your desired font family */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #ffffff; /* Adjust the color as needed */
+}
+.text-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-item h2 {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 1px;
+    color: #fff;
+    flex: 1; /* Takes up available space */
+    padding: 25px;
+    box-sizing: border-box;
+
+}
+
+.text-item p {
+    font-size: 14px;
+    color:#f9fafa;
+}
+
+.login-section {
+    background-color:rgba(255, 255, 255, 0.7); /* Transparent white background */
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 80%; /* Adjust max-width for responsiveness */
+    width: 350px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.form-box {
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.h2 {
+    font-family: 'Dancing Script', 'cursive';
+    align-items: center;
+    justify-content: center;
+    color: #001f3f; /* Dark blue color */
+    margin-top: -20px; /* Adjust the value to move it up */
+}
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Set the width of the input box */
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+.input-box input {
+    width: 90%;
+    padding: 10px 15px; /* Added padding to create space on the left */
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 50px; /* Add rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    transition: background-color 0.3s ease;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+    
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    transform: translateY(-70%);
+    font-size: 14px;
+    color: #00b4db;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust the right spacing as needed */
+    transform: translateY(-50%);
+    color: #888; /* Icon color */
+}
+.btn {
+    background-color: #1d0687f7;
+    color: #fafafa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Make it a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+    width: 100%; /* Set the width to fit the content (text) */
+
+}
+
+.btn:hover {
+    background-color: #0083b0;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.register {
+    text-align: center;
+    
+    font-size: 14px;
+}
+/* Toggle Password Visibility */
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-image: url('eye-icon.png'); /* Add your eye icon image path */
+}
+
+/* Additional styling for responsiveness */
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .login-section {
+        width: 80%;
+    }
+    
+    /* Additional styling for responsiveness */
+@media screen and (max-width: 600px) {
+    .icon {
+        right: 5px; /* Adjust for smaller screens if needed */
+    }
+} 
+}
